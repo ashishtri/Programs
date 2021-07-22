@@ -12,9 +12,9 @@ int main()
     int k='a'-'A'; // to get decimal diff between capital A and small a.
     
     if(i >= 65 && i <= 90)
-      cout<<char (i+k);
+      cout<<char (i+k); //cout<< char(i | 32 );
     if (i >= 97 && i<= 122)
-      cout<<char(i-k);
+      cout<<char(i-k); //cout<< char(i ^ 32);
 
     return 0;
 }
