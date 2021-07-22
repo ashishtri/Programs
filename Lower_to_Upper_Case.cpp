@@ -14,7 +14,7 @@ int main()
     if(i >= 65 && i <= 90)
       cout<<char (i+k); //cout<< char(i | 32 );
     if (i >= 97 && i<= 122)
-      cout<<char(i-k); //cout<< char(i ^ 32);
+      cout<<char(i-k); 
 
     return 0;
 }
