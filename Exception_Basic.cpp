@@ -25,7 +25,7 @@ void createException()
     }
     if(exception3)
     {
-        throw 5;//ingeger exception thrown
+        throw 5;//integer exception thrown
     }
 }
 
