@@ -15,6 +15,7 @@ void willgowrong::letsdowrong()
     //we are trying to allocate a large memory which is not possible to allocate
     //hence compiler will throw the standard exception bad_alloc, we will catch it.
     char *ptr =  new char[999999999999999999];
+    delete[] ptr;
 }
 
 int main()
