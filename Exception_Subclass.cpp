@@ -24,10 +24,10 @@ class myexception
         cout<<"thorw base exception class : "<<endl;
         throw exception();
     }
-    /*
+    /*  //myexception's what() implementation
     virtual const char* what()
     {
-        return "returning what() from myexception";
+        return "returning what() -> error from myexception";
     }
     */
 };
