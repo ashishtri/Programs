@@ -36,19 +36,19 @@ int main()
     myexception ex;
     try
     {
-        ex.exceptionBad_alloc();
-        ex.baseExceptionThorw();
+        ex.exceptionBad_alloc(); // comment / activate if you want to test for bad_alloc
+        ex.baseExceptionThorw(); // comment / activate if you want to test for exception()
     }
     //bad_alloc is the child class of exception class, 
     //so bad_alloc must be caught before its base class which is exception class
     catch(bad_alloc &e) 
     {
-        cout<<"always catch subclass before parent class exception : "<<e.what()<<endl;
+        cout<<"always catch subclass before parent class exception : \n catching :"<<e.what()<<endl;
     }
     //exception class is the parent of all exception classes like bad_alloc etc.
     catch(exception &e)
     {
-        cout<<"catching parent or base exception() from base exception class: "<<e.what()<<endl;
+        cout<<"catching parent or base exception() from base exception class: \n catching: "<<e.what()<<endl;
     }
     
     cout<<"Program is still running .... ";
